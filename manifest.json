@@ -1,0 +1,26 @@
+{
+    "name": "TOLUCA GRUPO INMOBILIARIO",
+    "short_name": "TOLUCA GRUPO INMOBILIARIO",
+    "start_url": "/index.php",
+    "display": "standalone",
+    "background_color": "#3769d6",
+    "theme_color": "#3769d6",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "build/img/icono/icons8-houses-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "build/img/icono/icons8-houses-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "build/img/icono/icons8-houses-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}

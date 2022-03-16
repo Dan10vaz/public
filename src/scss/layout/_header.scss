@@ -1,0 +1,38 @@
+
+/* .webp .inicio {
+    background-image: url(/build/img/header1.jpeg);
+} */
+
+.header{
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+        @include tablet{
+            min-height: 70rem;
+        }
+        .contenido-header{
+            @include tablet{
+                min-height: 70rem;
+            }
+        }
+    }
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1{
+        text-align: left;
+        color: $blanco;
+        font-weight: $black;
+        line-height: 1;
+        max-width: 60rem;
+    }
+
+}
+
