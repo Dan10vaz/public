@@ -24,6 +24,7 @@ echo 'En renta';
     <a href="<?php echo '/inmuebles.php?estatus='.$estatus.'&tipo=casa'?>" class="boton-amarillo">Casas</a>
     <a href="<?php echo '/inmuebles.php?estatus='.$estatus.'&tipo=departamento'?>" class="boton-amarillo">Depas</a>
     <a href="<?php echo '/inmuebles.php?estatus='.$estatus.'&tipo=bodega'?>" class="boton-amarillo">Bodegas</a>
+    <a href="<?php echo '/inmuebles.php?estatus='.$estatus.'&tipo=terreno'?>" class="boton-amarillo">Terrenos</a>
     <br>
     <br>
     <?php
