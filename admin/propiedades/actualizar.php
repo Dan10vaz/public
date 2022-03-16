@@ -196,6 +196,7 @@ incluirTemplate('header');
             <option value="casa">Casa</option>
             <option value="departamento">Departamento</option>
             <option value="bodega">Bodega</option>
+            <option value="terreno">Terreno</option>
             </select>
 
             <label for="titulo">Titulo:</label>

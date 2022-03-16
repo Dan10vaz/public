@@ -23,7 +23,7 @@
             //Obtener los reusltados 
             $resultado_imagenes = mysqli_query($db, $query);?>
             <?php $imagen = mysqli_fetch_assoc($resultado_imagenes);?>
-            <img loading="lazy" height="350" width="350" src="/imagenes/<?php echo $imagen['ruta']; ?>" alt="anuncio">
+            <img loading="lazy" height="300" width="300" src="/imagenes/<?php echo $imagen['ruta']; ?>" alt="anuncio">
             </picture>
     
         <div class="contenido-card">
