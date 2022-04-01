@@ -48,12 +48,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     var_dump($_FILES);
     echo "</pre>"; */
 
-    if (!$tipo) {
-        $errores[] = "Debes añadir un tipo de inmueble";
-    }
-
     if (!$estatus) {
         $errores[] = "Debes añadir un estatus del inmueble";
+    }
+
+    if (!$tipo) {
+        $errores[] = "Debes añadir un tipo de inmueble";
     }
 
     if (!$titulo) {
@@ -179,17 +179,17 @@ incluirTemplate('header');
             <label for="estatus">Estatus:</label>
                 <select name="estatus" id="estatus">
                     <option value="">-- Seleccione --</option>
-                    <option value="venta">Venta</option>
-                    <option value="renta">Renta</option>
+                    <option value="venta" <?php if($estatus== "venta"){echo "selected='selected'";}?>>Venta</option>
+                    <option value="renta" <?php if($estatus== "renta"){echo "selected='selected'";}?>>Renta</option>
                  </select>
 
             <label for="tipo">Tipo:</label>
             <select name="tipo" id="tipo">
             <option value="">-- Seleccione --</option>
-            <option value="casa">Casa</option>
-            <option value="departamento">Departamento</option>
-            <option value="bodega">Bodega</option>
-            <option value="terreno">Terreno</option>
+            <option value="casa" <?php if($tipo== "casa"){echo "selected='selected'";}?>>Casa</option>
+            <option value="departamento" <?php if($tipo== "departamento"){echo "selected='selected'";}?>>Departamento</option>
+            <option value="bodega" <?php if($tipo== "bodega"){echo "selected='selected'";}?>>Bodega</option>
+            <option value="terreno" <?php if($tipo== "terreno"){echo "selected='selected'";}?>>Terreno</option>
             </select>
 
             <label for="titulo">Titulo:</label>
