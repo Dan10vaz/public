@@ -51,7 +51,7 @@ $auth = $_SESSION['login'] ?? null;
             </div>
             <!--Cierre de barra-->
             <a class="bienes" href="/">
-                <img src="/build/img/logo.svg" width="75" height="75" alt="Logotipo de bienes raices">
+                <img src="/build/img/logo.svg" width="75" height="100" alt="Logotipo de bienes raices">
             </a>
         </div>
     </header>

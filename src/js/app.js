@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   eventListeners();
   darkMode();
-  header();
+  /*   header(); */
   serviceWorker();
 });
 
@@ -51,7 +51,7 @@ function navegacionResponsive() {
 
   navegacion.classList.toggle("mostrar");
 }
-
+/* 
 function header() {
   const headerInicio = document.querySelector(".inicio");
   headerInicio.style.backgroundImage = "url('/build/img/header2.jpeg')";
@@ -69,3 +69,4 @@ function header() {
     headerInicio.style.backgroundImage = "url('/build/img/header2.jpeg')";
   }, 20000);
 }
+ */

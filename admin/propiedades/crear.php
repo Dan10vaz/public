@@ -48,6 +48,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     var_dump($_FILES);
     echo "</pre>"; */
 
+    if (!$tipo) {
+        $errores[] = "Debes añadir un tipo de inmueble";
+    }
+
+    if (!$estatus) {
+        $errores[] = "Debes añadir un estatus del inmueble";
+    }
+
     if (!$titulo) {
         $errores[] = "Debes añadir un titulo";
     }
@@ -60,15 +68,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errores[] = "La descripcion es obligatoria y debe tener al menos 50 caracteres";
     }
 
-    if (!$habitaciones) {
+    if ($habitaciones <= -1) {
         $errores[] = "El numero de habitaciones es obligatorio";
     }
 
-    if (!$wc) {
+    if ($wc <= -1) {
         $errores[] = "El numero de baños es obligatorio";
     }
 
-    if (!$estacionamiento) {
+    if ($estacionamiento <= -1) {
         $errores[] = "El numero de lugares de estacionamiento es obligatorio";
     }
 
@@ -169,11 +177,11 @@ incluirTemplate('header');
             <legend>Información General</legend>
 
             <label for="estatus">Estatus:</label>
-            <select name="estatus" id="estatus">
-            <option value="">-- Seleccione --</option>
-            <option value="venta">Venta</option>
-            <option value="renta">Renta</option>
-            </select>
+                <select name="estatus" id="estatus">
+                    <option value="">-- Seleccione --</option>
+                    <option value="venta">Venta</option>
+                    <option value="renta">Renta</option>
+                 </select>
 
             <label for="tipo">Tipo:</label>
             <select name="tipo" id="tipo">
@@ -206,13 +214,13 @@ incluirTemplate('header');
             <legend>Información Propiedad</legend>
 
             <label for="habitaciones">Habitaciones:</label>
-            <input type="number" id="habitaciones" name="habitaciones" placeholder="Ej: 3" min="0" max="9" value="<?php echo $habitaciones ?>">
+            <input type="number" id="habitaciones" name="habitaciones" placeholder="Ej: 3" min="0" max="15" value="<?php echo $habitaciones ?>">
 
             <label for="wc">Baños:</label>
-            <input type="number" id="wc" name="wc" placeholder="Ej: 3" min="0" max="9" value="<?php echo $wc ?>">
+            <input type="number" id="wc" name="wc" placeholder="Ej: 3" min="0" max="15" value="<?php echo $wc ?>">
 
             <label for="estacionamiento">Estacionamiento:</label>
-            <input type="number" id="estacionamiento" name="estacionamiento" placeholder="Ej: 3" min="0" max="9" value="<?php echo $estacionamiento ?>">
+            <input type="number" id="estacionamiento" name="estacionamiento" placeholder="Ej: 3" min="0" max="15" value="<?php echo $estacionamiento ?>">
         </fieldset>
 
         <fieldset>

@@ -14,7 +14,7 @@
 
 
 
-<script src="/build/js/bundle.min.js"></script>
+
 <!-- <script src="/jQuery-3.6.0.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
@@ -39,5 +39,6 @@
       }
         document.getElementById('imagen').addEventListener('change', handleFileSelect, false);
 </script>
+<script src="/build/js/bundle.min.js"></script>
 </body>
 </html>
