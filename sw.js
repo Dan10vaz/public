@@ -1,4 +1,3 @@
-/* 
 
 self.addEventListener('install', e => {
     console.log('Instalado el Service Worker')
@@ -14,4 +13,4 @@ self.addEventListener('activate', e =>{
 
  self.addEventListener('fetch', e =>{
     console.log('Fetch...', e)
-}) */
+})
