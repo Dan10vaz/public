@@ -28,5 +28,8 @@
     "postcss": "^8.4.12",
     "sass": "^1.49.10",
     "terser": "^5.12.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }

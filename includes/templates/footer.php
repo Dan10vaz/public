@@ -38,6 +38,10 @@
         }
       }
         document.getElementById('imagen').addEventListener('change', handleFileSelect, false);
+
+
+        const options = {};
+        
 </script>
 <script src="/build/js/bundle.min.js"></script>
 </body>

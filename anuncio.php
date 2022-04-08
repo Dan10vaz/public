@@ -37,12 +37,12 @@ incluirTemplate('header');
 
     <div class="container-slider">
         <div class="slider" id="slider">
-            <?php while ($img = mysqli_fetch_assoc($res)) : ?>
-            <div class="slider__section"><img loading="lazy" src="/imagenes/<?php echo $img['ruta']; ?>" alt="imagen"></div>
+            <?php while ($img = mysqli_fetch_assoc($res)) : ?>  
+            <div class="slider__section"><img class="slider__img" loading="lazy" src="/imagenes/<?php echo $img['ruta']; ?>" alt="imagen"></div>
             <?php endwhile; ?> 
         </div>
-        <div class="slider__btn slider__btn--right">&#60</div>
-        <div class="slider__btn slider__btn--left">&#62</div>
+        <div class="slider__btn slider__btn--right" id="btn-right" >&#62</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
     </div>
     
 

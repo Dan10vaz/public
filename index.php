@@ -16,7 +16,7 @@ incluirTemplate('header', $inicio = true);
         <div class="icono">
             <img src="build/img/icono2.svg" alt="Icono precio" loading="lazy">
             <h3>Precio</h3>
-            <p>Ahora que estás buscando <B>comprar casa o departamento</B>, es importante que cuides tu patrimonio realizando una compra de forma <B>segura</B> . Comprar casa además de ser una de las <B>decisiones más importantes en la vida</B> de cada persona, también es un proceso que puede generar estrés y un sin fin de dudas. Esto lo puedes evitar siguiendo las medidas que <B>nosotros</B> te proporcionamos para comprar fácil y seguro.</p>
+            <p>Los mejores precios y inmuebles los en cuentras <B>Toluca Grupo Inmobiliario</B>, Tenemos a los mejores asesores que te ayudaran encontrar la casa de tus sueños de acuerdo a tus<B>necesidades</B> . Dejanos ser tu acompañante en el proceso de<B> tu compra o renta de tu hogar</B>
         </div>
 
         <div class="icono">

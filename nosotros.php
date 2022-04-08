@@ -17,15 +17,17 @@
 
             <div class="texto-nosotros">
                 <blockquote>
-                    10 años de experiencia
+                    Valores
                 </blockquote>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente nesciunt voluptatum voluptatibus saepe consequuntur assumenda hic voluptas asperiores cumque possimus placeat numquam, ipsum, quam unde deleniti veritatis fuga repudiandae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nisi, voluptatibus possimus, dolorum aperiam expedita dolores porro delectus laudantium harum, tempora in voluptatem pariatur aut consequatur provident explicabo cumque totam.
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quo ad quasi aut error autem, quae iure vero, explicabo maiores, cum praesentium quaerat enim perferendis! Nam omnis dignissimos non fugiat.
-                </p>
+                <ul>
+                    <li>
+                        Honestidad 
+                        <p>
+                        INNOVACION e IMAGINACION son los valores centrales que guían a nuestra organización.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
