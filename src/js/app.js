@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   eventListeners();
   darkMode();
+  widthDinamico();
   serviceWorker();
 });
 
-function serviceWorker() {
+/* function serviceWorker() {
   if ("serviceWorker" in navigator)
     navigator.serviceWorker
       .register("./sw.js")
@@ -15,7 +16,7 @@ function serviceWorker() {
   else {
     console.log("Service Workers no soportados");
   }
-}
+} */
 
 function darkMode() {
   const prefiereDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
@@ -70,42 +71,48 @@ function header() {
 }
  */
 
-  const slider = document.querySelector('#slider');
-  let sliderSection = document.querySelectorAll('.slider__section');
-  let sliderSectionLast = sliderSection[sliderSection.length -1]; //De esta manera obtenemos la ultima imagen
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".slider__section");
+let sliderSectionLast = sliderSection[sliderSection.length - 1]; //De esta manera obtenemos la ultima imagen
 
-  const btnLeft = document.querySelector('#btn-left');
-  const btnRight = document.querySelector('#btn-right');
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
 
-  slider.insertAdjacentElement('afterbegin', sliderSectionLast);//ponemos al inicio la ultima imagen
+slider.insertAdjacentElement("afterbegin", sliderSectionLast); //ponemos al inicio la ultima imagen
 
-  function moverDerecha() {
-    let sliderSectionFirst = document.querySelectorAll('.slider__section')[0]; //Tomamos la primer imagen
-    slider.style.marginLeft = "-200%";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-      slider.style.transition = "none";
-      slider.insertAdjacentElement('beforeend', sliderSectionFirst); //ponemos al final la primer imagen
-      slider.style.marginLeft = "-100%";
-    }, 500)
-  }
+function moverDerecha() {
+  let sliderSectionFirst = document.querySelectorAll(".slider__section")[0]; //Tomamos la primer imagen
+  slider.style.marginLeft = "-200%";
+  slider.style.transition = "all 0.5s";
+  setTimeout(function () {
+    slider.style.transition = "none";
+    slider.insertAdjacentElement("beforeend", sliderSectionFirst); //ponemos al final la primer imagen
+    slider.style.marginLeft = "-100%";
+  }, 500);
+}
 
-  function moverIzquierda() {
-    let sliderSection = document.querySelectorAll('.slider__section');
-    let sliderSectionLast = sliderSection[sliderSection.length -1]; //De esta manera obtenemos la ultima imagen
-    slider.style.marginLeft = "0";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-      slider.style.transition = "none";
-      slider.insertAdjacentElement('afterbegin', sliderSectionLast);//ponemos al inicio la ultima imagen
-      slider.style.marginLeft = "-100%";
-    }, 500);
-  }
+function moverIzquierda() {
+  let sliderSection = document.querySelectorAll(".slider__section");
+  let sliderSectionLast = sliderSection[sliderSection.length - 1]; //De esta manera obtenemos la ultima imagen
+  slider.style.marginLeft = "0";
+  slider.style.transition = "all 0.5s";
+  setTimeout(function () {
+    slider.style.transition = "none";
+    slider.insertAdjacentElement("afterbegin", sliderSectionLast); //ponemos al inicio la ultima imagen
+    slider.style.marginLeft = "-100%";
+  }, 500);
+}
 
-  btnRight.addEventListener('click', function(){
-    moverDerecha();
-  });
+function widthDinamico() {
+  let cantidad = document.querySelectorAll("#slider .slider__section").length;
+  console.log(cantidad);
+  
+}
 
-  btnLeft.addEventListener('click', function(){
-    moverIzquierda();
-  });
+btnRight.addEventListener("click", function () {
+  moverDerecha();
+});
+
+btnLeft.addEventListener("click", function () {
+  moverIzquierda();
+});
